@@ -73,3 +73,46 @@ function intersect(nums1, nums2) {
 const nums1 = [1, 2, 2, 1], nums2 = [2, 2]
 
 console.log(intersect(nums1, nums2))
+
+
+
+
+// LeetCode: 344. Reverse String
+
+/**
+ * @param {character[]} s
+ * @return {void} Do not return anything, modify s in-place instead.
+ */
+var reverseString = function(s) {
+    let i = 0, j = s.length - 1;
+    while (i < j) {
+      // ES6 destructuring assignment
+      [s[i], s[j]] = [s[j], s[i]];
+      i++;
+      j--;
+    }
+  };
+
+
+//   88. Merge Sorted Array
+
+  var merge = function (nums1, m, nums2, n) {
+    let i = m - 1; // last index of nums1 (POINTER1)
+    let j = n - 1; // last index of nums2 (POINTER2)
+    let k = m + n - 1; // modified mus1 but starting from last index
+
+    while (j >= 0) {
+        if (i >= 0 && nums1[i] > nums2[j]) {
+            // place bigger number to the last index of modified nums1 and move the pointer backward accordingly 
+            // here the assignment happens first then decrement happens means 
+            /*
+            nums1[k]=nums1[i];
+            K--;
+            i--;
+            */
+            nums1[k--] = nums1[i--];
+        } else {
+            nums1[k--] = nums2[j--];
+        }
+    }
+};
