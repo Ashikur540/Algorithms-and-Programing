@@ -2,13 +2,17 @@
 
 
 //  ### Traversing an Array (Time Complexity: O(n))
-
+/*
+TIME COMPLEXITY: O(n)
+SPACE COMPLEXITY: O(1)
+*/
 const arr = [1, 2, 3, 4, 5];
 
 //  using usual for loop
 for (let i = 0; i < arr.length; i++) {
     console.log("for loop",arr[i]);
 }
+
 //  using forEach loop
 
 arr.forEach((element)=>{
@@ -24,7 +28,10 @@ for (const num of arr) {
 // --------------------------------------
 
 //  ### Inserting an Element
-
+/*
+TIME COMPLEXITY: O(1)
+SPACE COMPLEXITY: O(1)
+*/
 const arr2 = [1, 2, 4, 5, 6];
 
 // insertion at the end of the array ( Time Complexity: O(1) )
@@ -41,9 +48,13 @@ arr2.splice(3, 0, 3);
 console.log(arr2);
 
 //  ### Deleting an Element
+/*
+TIME COMPLEXITY: O(1) for deletion at the end and O(n) for deletion at the beginning and at a specific index (because we have to shift elements and reorder)
+SPACE COMPLEXITY: O(1) because we are not using any extra space to delete the element
+*/
 const arr3 = [1, 2, 3, 4, 5, 6, 7];
 
-// deletion at the end of the array ( Time Complexity: O(1) )
+// deletion at the end of the array ( Time Complexity: O(1) ) 
 arr3.pop();
 console.log(arr3);
 
