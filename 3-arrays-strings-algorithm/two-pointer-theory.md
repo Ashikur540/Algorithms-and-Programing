@@ -58,3 +58,13 @@ The time complexity of this approach is O(n) because we are only traversing the 
 - We then move the pointers based on certain conditions.
 - We solve the problem by comparing or manipulating elements at the pointer positions.
 - We stop when the pointers meet or when a solution is found.
+
+**Learning Resources**:
+
+- [youtube channel to learn about the approach of leetCode problems](https://www.youtube.com/@peerprogramming)
+- [youtube channel playlist to learn about the approach of string related leetCode problems](https://www.youtube.com/watch?v=TtqdT_odTXY&list=PLSY-6FdfiuaXOiPj1kx8amQW1qKFuMA4R&pp=iAQB)
+
+**Practice Sources**:
+
+- [neetcode.io- follow neetcode All series (two pointer)](https://neetcode.io/practice)
+- [LeetCode - filter by tags like (two-pointer, string, array)](https://leetcode.com/problemset/)

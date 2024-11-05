@@ -116,3 +116,53 @@ var reverseString = function(s) {
         }
     }
 };
+
+
+ 
+// leetCode  283. Move Zeroes
+
+function moveZeroes(nums) {
+    let nonZeroNumPos = 0
+    let lastPos = nums.length - 1
+    //   first put non zero nums to the first indexs of the array
+    for (let i = 0; i < nums.length; i++) {
+        if (nums[i] != 0) {
+            console.log(nums[i])
+            nums[nonZeroNumPos++] = nums[i]
+        }
+    }
+    //    after placing all non zero nums then keep the rest indexes as zero which start form the nonZeroNumPos
+    while (nonZeroNumPos < nums.length) {
+        nums[nonZeroNumPos++] = 0
+    }
+
+};
+
+
+
+/** leetCode
+977. Squares of a Sorted Array
+ */
+var sortedSquares = function(nums) {
+    const n = nums.length;
+    const result = new Array(n);
+    let left = 0; // Pointer at the start
+    let right = n - 1; // Pointer at the end
+    let position = n - 1; // Position to fill in result array
+
+    while (left <= right) {
+        const leftSquare = nums[left] * nums[left];
+        const rightSquare = nums[right] * nums[right];
+
+        if (leftSquare > rightSquare) {
+            result[position] = leftSquare;
+            left++;
+        } else {
+            result[position] = rightSquare;
+            right--;
+        }
+        position--;
+    }
+
+    return result; // The result is already sorted in ascending order
+}
