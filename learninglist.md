@@ -21,6 +21,7 @@ These are the curated list of topics that are important to master to become a be
 - Two Pointer Technique
 - Sliding Window Technique
 - Stack and Queue
+- Linked list
 
 ### 4. Sorting Algorithms
 
