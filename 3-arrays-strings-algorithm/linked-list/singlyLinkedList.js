@@ -106,7 +106,7 @@ class SinglyLinkedList {
             this.length--;
 
             // if removed node was the tail
-            if (!current.next) this.tail = current;
+            if (!this.head.next) this.tail = current;
             return true
         }
 
@@ -164,7 +164,7 @@ class SinglyLinkedList {
 
     // Get data at specific position
 	get(position) {
-		if (position < 0 || position >= this.size) {
+		if (position < 0 || position >= this.length) {
 			return null;
 		}
 
@@ -195,17 +195,17 @@ class SinglyLinkedList {
 	clear() {
 		this.head = null;
 		this.tail = null;
-		this.size = 0;
+		this.length = 0;
 	}
 
-	// Get size of list
-	getSize() {
-		return this.size;
+	// Get length of list
+	getLength() {
+		return this.length;
 	}
 
 	// Check if list is empty
 	isEmpty() {
-		return this.size === 0;
+		return this.length === 0;
 	}
 
 	// Convert list to array
