@@ -20,6 +20,7 @@ These are the curated list of topics that are important to master to become a be
 
 - Two Pointer Technique
 - Sliding Window Technique
+- Prefix sum
 - Stack and Queue
 - Linked list
 
