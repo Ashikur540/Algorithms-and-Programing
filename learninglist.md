@@ -9,7 +9,7 @@ These are the curated list of topics that are important to master to become a be
 - Traversal
 - Insertion
 - Deletion
-- Searching (Linear search)
+- Searching (Linear search, Binary search)
 
 ### 2. Basic String Operations
 
